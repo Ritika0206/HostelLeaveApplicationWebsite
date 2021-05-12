@@ -1,0 +1,68 @@
+
+ul {
+  list-style-type: none;
+ 
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+h1{
+color: gainsboro;
+padding-top:-10px;
+font-size: 1100%;
+font-style:italic;
+font-weight: 500;
+}
+
+.back{
+background-image: url('images/ceg2.jpg');
+background-repeat: no-repeat;
+background-size: 125%;
+
+}
+
+button{
+  background-color:bisque;
+  border: none;
+  font-size: 100%;
+  color: firebrick;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 10px 10px 16px 10px;
+ 
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
