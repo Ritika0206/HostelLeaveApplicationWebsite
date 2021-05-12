@@ -1,0 +1,12 @@
+<?php
+
+include ('test.php');
+echo "hi";
+$stid = oci_parse($conn, "SELECT reg_no,reason FROM leave");
+oci_execute($stid);
+echo "REG_NO"."" . "REASON" ."<br>\n";
+while ($row = oci_fetch_array($stid,OCI_ASSOC)) {
+    echo $row['REG_NO'] . " " . $row['REASON'] . "<br>\n";
+}
+
+?>
